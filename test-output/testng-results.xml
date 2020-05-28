@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38355" started-at="2020-04-29T12:05:48 IST" finished-at="2020-04-29T12:06:27 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testCoreFiles.TestRunnerFile@30b8a058]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="38355" started-at="2020-04-29T12:05:48 IST" finished-at="2020-04-29T12:06:27 IST">
+      <class name="testCoreFiles.TestRunnerFile">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testCoreFiles.TestRunnerFile@30b8a058]" name="setUpClass" is-config="true" duration-ms="341" started-at="2020-04-29T12:05:48 IST" finished-at="2020-04-29T12:05:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testCoreFiles.TestRunnerFile@30b8a058]" name="runScenario" duration-ms="37945" started-at="2020-04-29T12:05:49 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-29T12:06:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register yourself first"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User individual registraion"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <input _ngcontent-c8="" formcontrolname="termCondition" style="zoom:1.5" type="checkbox" class="ng-untouched ng-pristine ng-invalid"> is not clickable at point (161, 310). Other element would receive the click: <div _ngcontent-c8="" class="row">...</div>
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LIN55000378', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\akumar94\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a13934fb2ca69acc0018e1a01717c25a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input _ngcontent-c8="" formcontrolname="termCondition" style="zoom:1.5" type="checkbox" class="ng-untouched ng-pristine ng-invalid"> is not clickable at point (161, 310). Other element would receive the click: <div _ngcontent-c8="" class="row">...</div>
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LIN55000378', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\akumar94\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a13934fb2ca69acc0018e1a01717c25a
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at PageFile.LaunchBrowser.address(LaunchBrowser.java:171)
+at StepDefination.BookTrainTicket.i_provide_residentional_address_deatils(BookTrainTicket.java:73)
+at ✽.I provide residentional address deatils(file:///C:/Users/akumar94/Desktop/driver1/irtcProject/src/test/resources/features/loginFeature.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testCoreFiles.TestRunnerFile@30b8a058]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2020-04-29T12:06:27 IST" finished-at="2020-04-29T12:06:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testCoreFiles.TestRunnerFile -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
